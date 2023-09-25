@@ -22,3 +22,7 @@ kbo 데이터의 연봉정보 및 기록을 수집하여 연봉과 성적의 상
 
 ### convenience_store
 전국 편의점 데이터를 바탕으로 점유율 분석을 하였다.
+
+### study
+데이터 분석의 기본이 되는 공부관련 자료입니다
+- Python, Pandas, Numpy, Statsmodels를 사용해 시계열 데이터를 예측하고 분석
