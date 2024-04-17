@@ -26,3 +26,4 @@ kbo 데이터의 연봉정보 및 기록을 수집하여 연봉과 성적의 상
 ### study
 데이터 분석의 기본이 되는 공부관련 자료입니다
 - Python, Pandas, Numpy, Statsmodels를 사용해 시계열 데이터를 예측하고 분석 (udemy)
+- 컬럼베이스인 duckdb의 장단점 및 왜 사용하는지에 대해 test
