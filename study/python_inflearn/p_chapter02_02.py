@@ -8,11 +8,11 @@
 class Car():
     """
     Car Class
-    Author : Kim
-    Date : 2019.11.08
+    Author : theo
+    Date : 2025.01.05
     """
 
-    # 클래스 변수
+    # 클래스 변수 갯수 카운트 하는방법
     car_count = 0
     # self : 인스턴스 메소드 | 각자 고유의 값을 가지고 있다.
     def __init__(self, company, details):
@@ -29,7 +29,7 @@ class Car():
     def detail_info(self):
         print('Current Id : {}'.format(id(self)))
         print('Car Detail Info : {} {}'.format(self._company, self._details.get('price')))
-
+    # 삭제 변수 -> 카운트도 줄여야하기때문에 car_count -= 1을 해주는것.
     def __del__(self):
         Car.car_count -= 1
 
@@ -66,8 +66,8 @@ car1.detail_info()
 car2.detail_info()
 
 # 에러
-# Car.detail_info()
-Car.detail_info(car1)
+# Car.detail_info() self로 값을 받기때문에 값까지 넣어줘야한다.
+Car.detail_info(car1) # car1.detail_info() 동일한 결과
 Car.detail_info(car2)
 
 # 비교
@@ -87,6 +87,7 @@ print()
 # 클래스 변수
 
 # 접근
+# 정석으로 사용할거면 class name으로 사용해야한다.
 print(car1.car_count)
 print(car2.car_count)
 print(Car.car_count)
@@ -107,3 +108,5 @@ del car2
 
 print(car1.car_count)
 print(Car.car_count)
+
+# 클래스 변수는 모든 인스턴스가 공유한다. -> 공통적인 결과를 나타낼때는 클래스 변수를 사용해야한다.
