@@ -105,16 +105,16 @@ print(p1._asdict(), p4._asdict())
 Classes = namedtuple('Classes', ['rank', 'number'])
 
 # 그룹 리스트 선언
-numbers = [str(n) for n in range(1, 21)]
-ranks = 'A B C D'.split()
+numbers = [str(n) for n in range(1, 21)] # 1~20
+ranks = 'A B C D'.split() # 공백기준으로 스플릿
 
-# List Comprehension
+# List Comprehension 지능형 리스트 | 선언 해놓은 네임드 튜플을 사용 
 students = [Classes(rank, number) for rank in ranks for number in numbers]
 
 print(len(students))
 print(students)
 
-# 추천
+# 반복문을 활용하여 가독성을 좋게하는 것을 추천
 students2 = [Classes(rank, number) 
                     for rank in 'A B C D'.split() 
                         for number in [str(n) 
