@@ -1,7 +1,13 @@
-# Data Analysis
+# Data
 
-소소한 데이터 분석 프로젝트를 모아 정리하였다.
+소소한 데이터 프로젝트를 모아 정리하였다.
 혹시 파일 오류 (Something went wrong. Reload?) 가 발생할 경우, 새로고침 하거나 직접 다운 받으면 열린다.
+
+### telegraph -> influxDB -> Grafana (24.07)
+타 프로젝트 진행과정에서 MQTT 를 이용하여 시계열 로그데이터를 수집하는 프로젝트가 있었다. 
+이에 착안하여 내가 남길 수 있는 CPU 등 노트북의 로그를 telegraph 라이브러리를 사용하여 TSDB인 influxdb에 적재,
+influxdb에서 grafana로 간단한 시각화를 진행하였다.
+
 
 - - -
 
